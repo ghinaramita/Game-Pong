@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-D:/STUDI INDEPENDEN/Pong/Game Pong/Pong.exe
+D:/STUDI INDEPENDEN/Pong/Pong/Game Pong (Build)/Pong.exe
 SceneListBegin?
 Assets/Scenes/Pong.unity
 SceneListEnd?

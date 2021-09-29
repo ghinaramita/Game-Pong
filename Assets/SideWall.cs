@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SideWall : MonoBehaviour
 {
-    public PlayerControl player; // Pemain yang akan bertambah skornya jika bola menyentuh dinding ini.
+    // Pemain yang akan bertambah skornya jika bola menyentuh dinding ini
+    public PlayerControl player; 
 
     // Skrip GameManager untuk mengakses skor maksimal
     [SerializeField]
@@ -26,16 +27,5 @@ public class SideWall : MonoBehaviour
                 anotherCollider.gameObject.SendMessage("RestartGame", 2.0f, SendMessageOptions.RequireReceiver);
             }
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

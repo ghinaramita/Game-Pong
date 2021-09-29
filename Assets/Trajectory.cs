@@ -25,10 +25,13 @@ public class Trajectory : MonoBehaviour
     {
         // Inisiasi status pantulan lintasan, yang hanya akan ditampilkan jika lintasan bertumbukan dengan objek tertentu.
         bool drawBallAtCollision = false;
+
         // Titik tumbukan yang digeser, untuk menggambar ballAtCollision
         Vector2 offsetHitPoint = new Vector2();
+
         // Tentukan titik tumbukan dengan deteksi pergerakan lingkaran
         RaycastHit2D[] circleCastHit2DArray = Physics2D.CircleCastAll(ballRigidbody.position, ballCollider.radius, ballRigidbody.velocity.normalized);
+
         // Untuk setiap titik tumbukan, ...
         foreach (RaycastHit2D circleCastHit2D in circleCastHit2DArray)
         {
